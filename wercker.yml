@@ -168,7 +168,7 @@ test:
             ant -file checkbuild.xml -logfile test.log
             sudo cp -rf ./logs/ $WERCKER_REPORT_ARTIFACTS_DIR
             sudo ./result.sh
-            
+            echo "!!! please check the result  ..."
             sudo cd /pipeline/source/ 
             echo "!!! Start to API TEST now ..."
             python -V
